@@ -30,18 +30,18 @@ exports.handler = async (event, context) => {
 
 👤 الاسم: ${data.name}
 📧 البريد الإلكتروني: ${data.email}
-📱 رقم الهاتف: ${data.phone}
-🛠️ نوع الخدمة: ${data.serviceType}
-💰 الميزانية: ${data.budget}
-📅 الموعد النهائي: ${data.deadline}
+📱 رقم الهاتف: ${data.phone || 'غير محدد'}
+🛠️ نوع الخدمة: ${data.serviceType || 'غير محدد'}
+💰 الميزانية: ${data.budget || 'غير محددة'}
+📅 الموعد النهائي: ${data.deadline || 'غير محدد'}
 
 📝 وصف المشروع:
 ${data.description}
     `.trim();
 
     const msg = {
-      to: 'YOUR_EMAIL@example.com', // 🔴 استبدل ده بالإيميل اللي عايز تستقبل عليه الرسائل
-      from: 'no-reply@yourdomain.com', // 🔴 لازم يكون Verified Sender في SendGrid
+      to: 'ahmedmefhat8@gmail.com',          // 📥 هنا الإيميل اللي هيوصلك عليه الإيميل
+      from: 'llm29915@gmail.com',            // 📤 لازم ده الإيميل المفعل
       subject: `🔥 طلب خدمة جديد من ${data.name}`,
       text: message,
     };
@@ -55,10 +55,15 @@ ${data.description}
 
   } catch (error) {
     console.error('SendGrid Error:', error);
+
+    // لو SendGrid رجع Error فيه details
+    if (error.response && error.response.body && error.response.body.errors) {
+      console.error(error.response.body.errors);
+    }
+
     return {
       statusCode: 500,
       body: JSON.stringify({ message: 'Failed to send email' }),
     };
   }
 };
-  
