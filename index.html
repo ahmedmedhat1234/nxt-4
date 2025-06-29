@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NXT4 - Programming Services Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <img src="nxt4-logo.png" alt="NXT4 Logo" class="logo">
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Welcome to NXT4</h1>
+            <p class="hero-subtitle">
+                Your premier programming services team, delivering cutting-edge solutions 
+                for web development, mobile applications, and digital transformation.
+            </p>
+            <div class="hero-tags">
+                <span class="tag">Web Development</span>
+                <span class="tag">Mobile Apps</span>
+                <span class="tag">Backend Services</span>
+                <span class="tag">Full Stack Solutions</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Frontend Development</h3>
+                    <p>Modern, responsive web interfaces using React, Vue.js, and cutting-edge CSS frameworks.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Backend Development</h3>
+                    <p>Robust server-side solutions with Node.js, Python, and scalable database architectures.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mobile Applications</h3>
+                    <p>Cross-platform mobile apps for iOS and Android using React Native and Flutter.</p>
+                </div>
+                <div class="service-card">
+                    <h3>API Development</h3>
+                    <p>RESTful and GraphQL APIs designed for performance, security, and scalability.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Database Design</h3>
+                    <p>Optimized database solutions using SQL and NoSQL technologies for your data needs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>DevOps & Deployment</h3>
+                    <p>Cloud deployment, CI/CD pipelines, and infrastructure management for seamless operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="ahmed.jpg" alt="Ahmed Medhat">
+                    </div>
+                    <h3>Ahmed Medhat</h3>
+                    <p>Full Stack Developer</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="omar.png" alt="Omar Nabil">
+                    </div>
+                    <h3>Omar Nabil</h3>
+                    <p>Frontend Developer</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="loay.png" alt="Loay Gamal">
+                    </div>
+                    <h3>Loay Gamal</h3>
+                    <p>Backend Developer</p>
+                </div>                    <div class="team-member">
+                    <div class="member-photo">
+                        <img src="mariam.jpg" alt="Mariam Hussam">
+                    </div>
+                    <h3>Mariam Hussam</h3>
+                    <p>Database Developer</p>
+                </div>          </div>
+        </div>
+    </section>
+
+    <!-- Request Form Section -->
+    <section class="request-form">
+        <div class="container">
+            <h2 class="section-title">طلب خدمة</h2>
+            <p class="form-subtitle">أرسل لنا تفاصيل مشروعك وسنتواصل معك في أقرب وقت</p>
+            <div class="form-container">
+                <form id="serviceForm" class="service-form">
+                    <div class="form-group">
+                        <label for="clientName">الاسم الكامل</label>
+                        <input type="text" id="clientName" name="clientName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="clientEmail">البريد الإلكتروني</label>
+                        <input type="email" id="clientEmail" name="clientEmail" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="clientPhone">رقم الهاتف</label>
+                        <input type="tel" id="clientPhone" name="clientPhone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="serviceType">نوع الخدمة المطلوبة</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">اختر نوع الخدمة</option>
+                            <option value="frontend">تطوير واجهات المستخدم</option>
+                            <option value="backend">تطوير الخادم</option>
+                            <option value="mobile">تطبيقات الهاتف المحمول</option>
+                            <option value="api">تطوير واجهات برمجة التطبيقات</option>
+                            <option value="database">تصميم قواعد البيانات</option>
+                            <option value="devops">النشر والإدارة السحابية</option>
+                            <option value="fullstack">حلول متكاملة</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="projectBudget">الميزانية المتوقعة</label>
+                        <select id="projectBudget" name="projectBudget" required>
+                            <option value="">اختر الميزانية</option>
+                            <option value="1000-5000">1000 - 5000 جنيه</option>
+                            <option value="5000-10000">5000 - 10000 جنيه</option>
+                            <option value="10000-20000">10000 - 20000 جنيه</option>
+                            <option value="20000+">أكثر من 20000 جنيه</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="projectDescription">وصف المشروع</label>
+                        <textarea id="projectDescription" name="projectDescription" rows="5" required placeholder="اكتب تفاصيل مشروعك هنا..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="projectDeadline">الموعد النهائي المطلوب</label>
+                        <input type="date" id="projectDeadline" name="projectDeadline" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">إرسال الطلب</span>
+                        <span class="btn-loader"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Connect With Us</h2>
+            <p class="contact-subtitle">Ready to bring your ideas to life? Get in touch with our team!</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/ahmed_aloush_2005" target="_blank" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/share/16SQUNNQAw/" target="_blank" class="social-link facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://wa.me/01277576772" target="_blank" class="social-link whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.tiktok.com/@ahmedaloush2005" target="_blank" class="social-link tiktok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+            <p class="phone">Phone: <a href="tel:01277576772">01277576772</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 NXT4. All rights reserved. | Delivering excellence in programming services.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
