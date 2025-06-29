@@ -1,0 +1,10 @@
+{
+  "name": "nxt4-site",
+  "version": "1.0.0",
+  "description": "NXT4 website with Netlify Functions",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0"
+  }
+}
