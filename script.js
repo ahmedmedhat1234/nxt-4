@@ -266,7 +266,7 @@ ${data.description}
 تم الإرسال تلقائياً من موقع NXT4
     `.trim();
     
-    const whatsappUrl = `https://wa.me/01277576772?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/+201277576772?text=${encodeURIComponent(message)}`;
     
     // Open WhatsApp in a new tab (this will work on mobile and desktop)
     window.open(whatsappUrl, '_blank');
