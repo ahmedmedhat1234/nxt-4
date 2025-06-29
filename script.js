@@ -229,21 +229,23 @@ function showFieldError(formGroup, message) {
 }
 
 // Send email using PHP service
+// Send email using Netlify Function
 async function sendEmail(data) {
-    const response = await fetch('email-service.php', {
+    const response = await fetch('/.netlify/functions/send-email', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(data)
     });
-    
+
     if (!response.ok) {
         throw new Error('Failed to send email');
     }
-    
+
     return await response.json();
 }
+
 
 // Send WhatsApp message
 async function sendWhatsApp(data) {
